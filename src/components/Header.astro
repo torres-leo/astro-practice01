@@ -1,0 +1,94 @@
+---
+import Button from './Button.astro';
+---
+
+<header class='py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6'>
+	<i></i>
+	<div class='mx-auto text-center mb-8 lg:mb-16 flex items-center justify-center flex-col'>
+		<h2 class='mb-4 text-5xl tracking-wider font-extrabold'>SpaceX Launches 🚀</h2>
+		<p class='font-light text-gray-500 sm:text-xl dark:text-gray-400/80'>All the information about SpaceX launches</p>
+		<a href='/'>
+			<svg xmlns='http://www.w3.org/2000/svg' width='80' height='100' fill='none' viewBox='0 0 128 128'>
+				<path
+					class='astro-icon'
+					d='M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z'
+				></path>
+			</svg>
+		</a>
+	</div>
+
+	<nav class='flex flex-col items-center justify-evenly w-full text-center md:flex-row'>
+		<Button link='/'>
+			<svg
+				slot='before'
+				width='22'
+				height='22'
+				viewBox='0 0 24 24'
+				stroke-width='1.5'
+				stroke='#e2e8f0'
+				fill='none'
+				stroke-linecap='round'
+				stroke-linejoin='round'>
+				<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+				<path d='M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3'
+				></path>
+				<path d='M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3'></path>
+				<path d='M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0'></path>
+			</svg>
+			 Latest releases
+		</Button>
+		<Button link='/'>
+			<svg
+				width='22'
+				height='22'
+				viewBox='0 0 24 24'
+				stroke-width='1.5'
+				stroke='#e2e8f0'
+				fill='none'
+				stroke-linecap='round'
+				stroke-linejoin='round'>
+				<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+				<path d='M20.982 11.436a9 9 0 1 0 -9.966 9.51'></path>
+				<path
+					d='M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z'
+				></path>
+				<path d='M12 7v5l1 1'></path>
+			</svg>
+			 Oldest
+		</Button>
+		<Button link='/about'>
+			<svg
+				slot='before'
+				width='22'
+				height='22'
+				viewBox='0 0 24 24'
+				stroke-width='1.5'
+				stroke='#e2e8f0'
+				fill='none'
+				stroke-linecap='round'
+				stroke-linejoin='round'>
+				<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+				<path d='M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0'></path>
+				<path d='M12 9h.01'></path>
+				<path d='M11 12h1v4h1'></path>
+			</svg>
+			 About
+		</Button>
+	</nav>
+
+	<style>
+		.astro-icon {
+			fill: #000;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			.astro-icon {
+				fill: #fff;
+			}
+
+			.astro-icon:hover {
+				fill: #bdb8b8;
+			}
+		}
+	</style>
+</header>
